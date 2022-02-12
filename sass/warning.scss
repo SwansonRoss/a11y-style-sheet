@@ -1,0 +1,11 @@
+@mixin warning {
+    border: 2px red solid;
+}
+
+@mixin warningMessage {
+    color: red;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+}
