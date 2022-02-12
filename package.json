@@ -1,0 +1,22 @@
+{
+  "name": "a11y-style-sheet",
+  "version": "1.0.0",
+  "description": "CSS styles that can highlight accessiblity issues on a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwansonRoss/a11y-style-sheet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwansonRoss/a11y-style-sheet/issues"
+  },
+  "homepage": "https://github.com/SwansonRoss/a11y-style-sheet#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
