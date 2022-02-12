@@ -1,0 +1,11 @@
+h1:not(:first-of-type) {
+  border: 2px red solid;
+}
+h1:not(:first-of-type):after {
+  content: "Only 1 H1 element per page";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
