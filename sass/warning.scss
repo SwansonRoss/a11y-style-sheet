@@ -1,5 +1,6 @@
 @mixin warning {
     border: 2px red solid;
+    border-radius: 10px;
 }
 
 @mixin warningMessage {

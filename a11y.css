@@ -1,7 +1,21 @@
+body:has(:not(h1)) {
+  border: 2px red solid;
+  border-radius: 10px;
+}
+body:has(:not(h1)):before {
+  content: "Page should countain 1 <H1> element per page";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
 h1:not(:first-of-type) {
   border: 2px red solid;
+  border-radius: 10px;
 }
-h1:not(:first-of-type):after {
+h1:not(:first-of-type):before {
   content: "Only 1 H1 element per page";
   color: red;
   display: block;
