@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Images must have and alt attribute",
+        "selector" : "img:not([alt])",
+        "domain" : "js"
+    },
+    {
+        "title": "Images with empty alt tags must be only for presentation",
+        "selector" : "img[alt='']:not([role='presentation'])",
+        "domain" : "js"
+    }
+]

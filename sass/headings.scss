@@ -3,7 +3,7 @@
 h1:not(:first-of-type) {
     @include warning;
 
-    &:after {
+    &:before {
         content: "Only 1 H1 element per page";
         @include warningMessage;
     }
