@@ -57,3 +57,39 @@ img[alt=""]:not([role=presentation]):before {
   line-height: 14px;
   font-weight: normal;
 }
+
+a:not([aria-label]):not([aria-labelledby]) {
+  border: 2px red solid;
+}
+a:not([aria-label]):not([aria-labelledby]):before {
+  content: "Links need to be labeled";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+[role=link]:not([tabindex="0"]) {
+  border: 2px red solid;
+}
+[role=link]:not([tabindex="0"]):before {
+  content: "Emulated links need a tabindex set to 0";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+[role=button]:not([tabindex="0"]) {
+  border: 2px red solid;
+}
+[role=button]:not([tabindex="0"]):before {
+  content: "Emulated buttons need a tabindex set to 0";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}

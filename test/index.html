@@ -15,11 +15,31 @@
 
     <div class="container">
         <h1>a11y.css Test</h1>
-        <h1 class="subhead">A page to test that accessibility issues get called out</h1>
+        <h1 class="subhead">This Subhead should fail</h1>
+
         <div class="flex-col">
             <div class="img-container"><img src="https://via.placeholder.com/200x200"></div>
             <div class="img-container"><img src="https://via.placeholder.com/200x200" alt=""></div>
             <div class="img-container"><img src="https://via.placeholder.com/200x200" alt="" role="presentation"></div>
+        </div>
+
+        <div>
+            <p id="link-label">Label for the third link</p>
+            <a href="/test">Should Fail</a>
+            <a href="/test" aria-label="Hello">Should Pass</a>
+            <a href="test" aria-labelledby="#link-label">Should Pass</a>
+        </div>
+
+        <div>
+            <p><span role="link">Emulated link that should fail</span></p>
+            <p><span role="link" tabindex="1">Emulated link that should fail</span></p>
+            <p><span role="link" tabindex="0">Emulated link that should pass</span></p>
+        </div>
+
+        <div>
+            <div class="button" role="button">Button should fail</div>
+            <div class="button" role="button" tabindex="1">Emulated button should fail</div>
+            <div class="button" role="button" tabindex="0">Emulated button should pass</div>
         </div>
     </div>
 

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Links should have titles",
+        "selector": "a:not([aria-label]):not([aria-labeledby])",
+        "domain": "scss"
+    },
+    {
+        "title": "Emulated links should have tabindex",
+        "selector": "[role=link]:not([tabindex=0])",
+        "domain": "scss"
+    },
+    {
+        "title": "Emulated buttons should have tabindex",
+        "selector": "[role=button]:not[tabindex=0])",
+        "domain": "scss"
+    },
+    {
+        "title": "Emulated links should have a cursor style of pointer",
+        "selector": "",
+        "domain": "js"
+    },
+    {
+        "title": "Emulated buttons should have a cursor style of pointer",
+        "selector": "",
+        "domain": "js"
+    }
+]
