@@ -1,16 +1,3 @@
-body:has(:not(h1)) {
-  border: 2px red solid;
-  border-radius: 10px;
-}
-body:has(:not(h1)):before {
-  content: "Page should countain 1 <H1> element per page";
-  color: red;
-  display: block;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: normal;
-}
-
 h1:not(:first-of-type) {
   border: 2px red solid;
   border-radius: 10px;
@@ -24,8 +11,74 @@ h1:not(:first-of-type):before {
   font-weight: normal;
 }
 
+.HeadingOrderViolatedH2 {
+  border: 2px red solid;
+  border-radius: 10px;
+}
+.HeadingOrderViolatedH2:before {
+  content: "An H2 is used without an H1";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.HeadingOrderViolatedH3 {
+  border: 2px red solid;
+  border-radius: 10px;
+}
+.HeadingOrderViolatedH3:before {
+  content: "An H3 is used without an H2";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.HeadingOrderViolatedH4 {
+  border: 2px red solid;
+  border-radius: 10px;
+}
+.HeadingOrderViolatedH4:before {
+  content: "An H4 is used without an H3";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.HeadingOrderViolatedH5 {
+  border: 2px red solid;
+  border-radius: 10px;
+}
+.HeadingOrderViolatedH5:before {
+  content: "An H5 is used without an H4";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.HeadingOrderViolatedH6 {
+  border: 2px red solid;
+  border-radius: 10px;
+}
+.HeadingOrderViolatedH6:before {
+  content: "An H6 is used without an H5";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
 img:not([alt]) {
   border: 2px red solid;
+  border-radius: 10px;
 }
 img:not([alt]):before {
   content: "All images must include an alt tag";
@@ -38,6 +91,7 @@ img:not([alt]):before {
 
 .ParentRule__Images1 {
   border: 2px red solid;
+  border-radius: 10px;
 }
 .ParentRule__Images1:before {
   content: "All images must include an alt tag";
@@ -50,6 +104,7 @@ img:not([alt]):before {
 
 img[alt=""]:not([role=presentation]) {
   border: 2px red solid;
+  border-radius: 10px;
 }
 img[alt=""]:not([role=presentation]):before {
   content: "Images with empty alt tags must only be for presentation";
@@ -62,6 +117,7 @@ img[alt=""]:not([role=presentation]):before {
 
 .ParentRule__Images2 {
   border: 2px red solid;
+  border-radius: 10px;
 }
 .ParentRule__Images2:before {
   content: "Images with empty alt tags must only be for presentation";
@@ -74,6 +130,7 @@ img[alt=""]:not([role=presentation]):before {
 
 a:not([aria-label]):not([aria-labelledby]) {
   border: 2px red solid;
+  border-radius: 10px;
 }
 a:not([aria-label]):not([aria-labelledby]):before {
   content: "Links need to be labeled";
@@ -86,6 +143,7 @@ a:not([aria-label]):not([aria-labelledby]):before {
 
 [role=link]:not([tabindex="0"]) {
   border: 2px red solid;
+  border-radius: 10px;
 }
 [role=link]:not([tabindex="0"]):before {
   content: "Emulated links need a tabindex set to 0";
@@ -98,6 +156,7 @@ a:not([aria-label]):not([aria-labelledby]):before {
 
 [role=button]:not([tabindex="0"]) {
   border: 2px red solid;
+  border-radius: 10px;
 }
 [role=button]:not([tabindex="0"]):before {
   content: "Emulated buttons need a tabindex set to 0";

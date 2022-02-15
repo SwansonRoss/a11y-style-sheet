@@ -8,3 +8,48 @@ h1:not(:first-of-type) {
         @include warningMessage;
     }
 }
+
+.HeadingOrderViolatedH2 {
+    @include warning;
+
+    &:before {
+        content: "An H2 is used without an H1";
+        @include warningMessage;
+    }
+}
+
+.HeadingOrderViolatedH3 {
+    @include warning;
+
+    &:before {
+        content: "An H3 is used without an H2";
+        @include warningMessage;
+    }
+}
+
+.HeadingOrderViolatedH4 {
+    @include warning;
+
+    &:before {
+        content: "An H4 is used without an H3";
+        @include warningMessage;
+    }
+}
+
+.HeadingOrderViolatedH5 {
+    @include warning;
+
+    &:before {
+        content: "An H5 is used without an H4";
+        @include warningMessage;
+    }
+}
+
+.HeadingOrderViolatedH6 {
+    @include warning;
+
+    &:before {
+        content: "An H6 is used without an H5";
+        @include warningMessage;
+    }
+}
