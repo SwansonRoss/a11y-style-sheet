@@ -1,0 +1,37 @@
+@import 'warning.scss';
+
+img:not([alt]){
+    @include warning;
+
+    &:before {
+        content: "All images must include an alt tag";
+        @include warningMessage;
+    }
+}
+
+.ParentRule__Images1{
+    @include warning;
+
+    &:before {
+        content: "All images must include an alt tag";
+        @include warningMessage;
+    }
+}
+
+img[alt='']:not([role='presentation']){
+    @include warning;
+
+    &:before {
+        content: "Images with empty alt tags must only be for presentation";
+        @include warningMessage;
+    }
+}
+
+.ParentRule__Images2{
+    @include warning;
+
+    &:before {
+        content: "Images with empty alt tags must only be for presentation";
+        @include warningMessage;
+    }
+}

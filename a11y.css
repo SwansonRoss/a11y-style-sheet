@@ -1,8 +1,56 @@
 h1:not(:first-of-type) {
   border: 2px red solid;
 }
-h1:not(:first-of-type):after {
+h1:not(:first-of-type):before {
   content: "Only 1 H1 element per page";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+img:not([alt]) {
+  border: 2px red solid;
+}
+img:not([alt]):before {
+  content: "All images must include an alt tag";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.ParentRule__Images1 {
+  border: 2px red solid;
+}
+.ParentRule__Images1:before {
+  content: "All images must include an alt tag";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+img[alt=""]:not([role=presentation]) {
+  border: 2px red solid;
+}
+img[alt=""]:not([role=presentation]):before {
+  content: "Images with empty alt tags must only be for presentation";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.ParentRule__Images2 {
+  border: 2px red solid;
+}
+.ParentRule__Images2:before {
+  content: "Images with empty alt tags must only be for presentation";
   color: red;
   display: block;
   font-size: 12px;
