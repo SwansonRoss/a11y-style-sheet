@@ -23,3 +23,87 @@ h1:not(:first-of-type):before {
   line-height: 14px;
   font-weight: normal;
 }
+
+img:not([alt]) {
+  border: 2px red solid;
+}
+img:not([alt]):before {
+  content: "All images must include an alt tag";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.ParentRule__Images1 {
+  border: 2px red solid;
+}
+.ParentRule__Images1:before {
+  content: "All images must include an alt tag";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+img[alt=""]:not([role=presentation]) {
+  border: 2px red solid;
+}
+img[alt=""]:not([role=presentation]):before {
+  content: "Images with empty alt tags must only be for presentation";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.ParentRule__Images2 {
+  border: 2px red solid;
+}
+.ParentRule__Images2:before {
+  content: "Images with empty alt tags must only be for presentation";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+a:not([aria-label]):not([aria-labelledby]) {
+  border: 2px red solid;
+}
+a:not([aria-label]):not([aria-labelledby]):before {
+  content: "Links need to be labeled";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+[role=link]:not([tabindex="0"]) {
+  border: 2px red solid;
+}
+[role=link]:not([tabindex="0"]):before {
+  content: "Emulated links need a tabindex set to 0";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+[role=button]:not([tabindex="0"]) {
+  border: 2px red solid;
+}
+[role=button]:not([tabindex="0"]):before {
+  content: "Emulated buttons need a tabindex set to 0";
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+}

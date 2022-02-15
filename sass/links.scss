@@ -1,0 +1,28 @@
+@import 'warning.scss';
+
+a:not([aria-label]):not([aria-labelledby]) {
+    @include warning;
+
+    &:before {
+        content: "Links need to be labeled";
+        @include warningMessage;
+    }
+}
+
+[role=link]:not([tabindex='0']) {
+    @include warning;
+
+    &:before {
+        content: "Emulated links need a tabindex set to 0";
+        @include warningMessage;
+    }
+}
+
+[role=button]:not([tabindex='0']) {
+    @include warning;
+
+    &:before {
+        content: "Emulated buttons need a tabindex set to 0";
+        @include warningMessage;
+    }
+}
